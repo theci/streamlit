@@ -57,7 +57,13 @@ type_option = st.sidebar.selectbox(
     "아파트/연립다세대 선택",
     type_list
 )
-
+if type_option == '연립다세대':
+    area_value = (0, 400)  # 연립다세대의 경우 전용면적 슬라이더를 사용하지 않음
+else:
+    area_value = st.slider(
+        '전용면적',
+        0, 400, (0, 200))
+    
 trade_option = st.sidebar.selectbox(
  '거래타입',
  trade_list
