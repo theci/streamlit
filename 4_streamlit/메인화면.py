@@ -65,8 +65,8 @@ trade_option = st.sidebar.selectbox(
   
 type_cd = type_dic[type_option]
 
-df_trade_202210 = read_file_csv(f'apart-bucket/0_data/streamlit_data/{type_cd}_trade_202210.csv')
-df_rent_202210 = read_file_csv(f'apart-bucket/0_data/streamlit_data/{type_cd}_rent_202210.csv')
+df_trade_202210 = read_file_csv(f'pch-test-bucket/0_data/streamlit_data/{type_cd}_trade_202210.csv')
+df_rent_202210 = read_file_csv(f'pch-test-bucket/0_data/streamlit_data/{type_cd}_rent_202210.csv')
 
 df_trade_202210_2 = df_trade_202210[df_trade_202210['시도명'] == sig_area]
 df_rent_202210_2 = df_rent_202210[df_rent_202210['시도명'] == sig_area]

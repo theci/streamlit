@@ -39,14 +39,14 @@ with open('4_streamlit/style.css') as f:
 
 
 # s3 download
-census = read_file_csv('apart-bucket/0_data/streamlit_data/census_202210.csv')
+census = read_file_csv('pch-test-bucket/0_data/streamlit_data/census_202210.csv')
 
-public_park = read_file_csv('apart-bucket/0_data/streamlit_data/public_park.csv')
+public_park = read_file_csv('pch-test-bucket/0_data/streamlit_data/public_park.csv')
 
 public_park['시도명'] = public_park['소재지지번주소'].str.split(' ').str[0]
 public_park['시군구명'] = public_park['소재지지번주소'].str.split(' ').str[1]
 
-elementary_school = read_file_csv('apart-bucket/0_data/streamlit_data/elementary_school.csv')
+elementary_school = read_file_csv('pch-test-bucket/0_data/streamlit_data/elementary_school.csv')
 
 elementary_school['시도명'] = elementary_school['도로명주소'].str.split(' ').str[0]
 elementary_school['시군구명'] = elementary_school['도로명주소'].str.split(' ').str[1]

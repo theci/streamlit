@@ -61,11 +61,11 @@ month_option = st.sidebar.selectbox(
 
 sig_area = option
 
-trade_count_df = read_file_csv('apart-bucket/0_data/streamlit_data/trade_count.csv')
-vis_trade_rent_df = read_file_csv('apart-bucket/0_data/streamlit_data/vis_trade_rent.csv')
-apart_trans4 = read_file_csv('apart-bucket/0_data/streamlit_data/map_csv.csv')
-sig_lat_lon = read_file_csv('apart-bucket/0_data/streamlit_data/sig_lat_lon.csv')
-geo_json_seoul = read_file_json(f'apart-bucket/0_data/streamlit_data/geo_sig_{sig_area}_json.geojson')
+trade_count_df = read_file_csv('pch-test-bucket/0_data/streamlit_data/trade_count.csv')
+vis_trade_rent_df = read_file_csv('pch-test-bucket/0_data/streamlit_data/vis_trade_rent.csv')
+apart_trans4 = read_file_csv('pch-test-bucket/0_data/streamlit_data/map_csv.csv')
+sig_lat_lon = read_file_csv('pch-test-bucket/0_data/streamlit_data/sig_lat_lon.csv')
+geo_json_seoul = read_file_json(f'pch-test-bucket/0_data/streamlit_data/geo_sig_{sig_area}_json.geojson')
 
 
 
